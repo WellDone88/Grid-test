@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive Gallery</title>
+    <style>
+      img {
+        max-width: 100%;
+        height: auto;
+      }
+      .gallery {
+        display: grid;
+        grid-template-columns: 200px 200px 200px;
+        grid-template-rows: 150px 150px;
+        gap: 15px;
+        grid-auto-flow: row;
+      }
+
+      body {
+        width: 100%;
+        padding: 20px;
+        background-color: rgb(255, 0, 76);
+      }
+
+      /* Tablet og større */
+      @media screen and (min-width: 768px) {
+        body {
+          width: 80%;
+          margin: 0 auto;
+          padding: 40px;
+        }
+      }
+
+      /* Desktop */
+      @media screen and (min-width: 1024px) {
+        body {
+          width: 1200px;
+          margin: 0 auto;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Responsive Image Gallery</h1>
+    <div class="gallery">
+      <img class="container" src="https://picsum.photos/600/400?random=1" />
+      <img src="https://picsum.photos/600/400?random=4" />
+      <img src="https://picsum.photos/600/400?random=6" />
+      <img src="https://picsum.photos/600/400?random=4" />
+      <img src="https://picsum.photos/600/400?random=5" />
+      <img src="https://picsum.photos/600/400?random=6" />
+      <img src="https://picsum.photos/600/400?random=7" />
+      <img src="https://picsum.photos/600/400?random=8" />
+      <img src="https://picsum.photos/600/400?random=9" />
+      <img src="https://picsum.photos/600/400?random=10" />
+      <img src="https://picsum.photos/600/400?random=11" />
+      <img src="https://picsum.photos/600/400?random=14" />
+    </div>
+  </body>
+</html>
