@@ -23,20 +23,24 @@
         background-color: rgb(255, 0, 76);
       }
 
-      /* Tablet og større */
-      @media screen and (min-width: 768px) {
-        body {
-          width: 80%;
-          margin: 0 auto;
-          padding: 40px;
+      @media (min-width: 768px) {
+        h1 {
+          font-size: 32px;
+        }
+
+        .grid {
+          grid-template-columns: 1fr 1fr;
         }
       }
 
-      /* Desktop */
-      @media screen and (min-width: 1024px) {
-        body {
-          width: 1200px;
-          margin: 0 auto;
+      /* DESKTOP: Tre kolonner */
+      @media (min-width: 1024px) {
+        h1 {
+          font-size: 40px;
+        }
+
+        .grid {
+          grid-template-columns: 1fr 1fr 1fr;
         }
       }
     </style>
